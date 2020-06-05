@@ -14,15 +14,14 @@ function CakeContainer() {
             <h2>Number of cakes - {numOfCakes}</h2>
             <input type="text" value={number} onChange={e=>setNumber(e.target.value)}/>
 
-            {console.log("numbernumber",number)}
-            <button onClick={()=>dispatch(buyCake({number:number,string:"type someting"}))}>Buy Cake</button>
+            <button onClick={()=>dispatch(buyCake({number:number,string:string}))}>Buy Cake</button>
             <h1>---------------------------------</h1>
             <h1>---------------------------------</h1>
             <h1>---------------------------------</h1>
             <h2>String {strOfInput}</h2>
             
             <input type="text" value={string} onChange={e=>setString(e.target.value)}/>
-            <button onClick={()=>dispatch(buyCake({string:string,number:null}))}>Change String</button>
+            <button onClick={()=>dispatch(buyCake({string:string,number:number}))}>Change String</button>
 
         </div>
     )
